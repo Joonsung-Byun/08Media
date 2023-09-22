@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    }
+    /* header starts here*/
+    header {
+        background-color: #0D0D0D;
+        padding: 1rem 2%;
+        margin: 0;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    header div {
+        padding-left: 0.7rem;
+    }
+
+    header h1 {
+        color: #F2F2F2;
+        margin: 0;
+        font-size: 1.9rem;
+    }
+
+    header p {
+        color: #F2F2F2;
+        letter-spacing: 0.7px;
+        margin: 0;
+    }
+    
+    /* small screen*/
+    @media only screen and (max-width:757px) {
+        nav ul {
+            margin: 0;
+            margin-top: 2%;
+            padding: 0 2%;
+            list-style-type: none;
+            display: block;
+        }
+
+        nav a {
+            display: block;
+            padding-top: .8rem;
+            padding-bottom: .8rem;
+            text-align: center;
+            text-decoration: none;
+            color: #0D0D0D;
+            border-bottom: 1px solid #aaa;
+        }
+
+        nav .current_page a {
+            background-color: #F2A444;
+            background-image: linear-gradient(#F2A444, #a5702e);
+        }
+    }
+
+    /* big screen*/
+    @media only screen and (min-width:758px) {
+        nav {
+            background-color: #F2A444;
+        }
+    
+        nav ul {
+            margin: 0;
+            display: flex;
+            padding: 0 2%;
+            list-style-type: none;
+            flex-wrap: wrap;
+    
+        }
+    
+        nav ul li a {
+            text-decoration: none;
+            color: #0D0D0D;
+            display: block;
+            padding: .83rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+    
+        nav ul li.current_page a {
+            background-color: #BF7960;
+        }
+    
+        nav a:hover {
+            color: #F2F2F2;
+        }
+    }
+
+
+    
+    /* main starts here*/
+    main .heroImage {
+        margin: 0;
+        width: 100%;
+    }
+
+    .heroImage img {
+        width: 100%;
+        height: auto;
+    }
+    
+    main {
+        padding: 1rem 2%;
+    }
+
+    main h1 {
+        color: #0D0D0D;
+    }
+
+    main h2 {
+        color: #BF7960;
+    }
+   
+    main p {
+        color: #0D0D0D;
+        margin: 0 0 0.3rem 0;
+    }
+
+
+    main address {
+        font-style: normal;
+        background-color: #F2A444;
+        padding: .5rem;
+        width: 14rem;
+        border: 1px solid #024873;
+        border-radius: 0.5rem;
+        margin: 1rem 0;
+    }
+
+    main a[target="_blank"] {
+        color: #0D0D0D;
+        font-size: 1rem;
+    }
+
+    main ul {
+        background-color: #F2A444;
+        border-radius: 6px;
+        border: 1px solid #024873;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-right: 1%;
+        list-style-type: none;
+        line-height: 1.2rem;
+    }
+
+    .economicImpact li {
+        margin-top: 1vw;
+    }
+
+    main ol li {
+        margin-bottom: 1rem;
+    }   
+
+    main ol li:first-child {
+        font-weight: 700;
+    }
+
+    main dt::before {
+        content: "* ";
+    }
+    
+    main dl {
+        padding-left: 1rem;
+    }
+    main dl dd {
+        margin-top: 0.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .btn {
+        color: #0D0D0D;
+    }
+
+    .wrapped {
+        width: 30%;
+        margin: 0 0 0 2%;
+        float: right;
+    }
+
+    .wrapped img {
+        width: 100%;
+        height: auto;
+    }
+
+    .wrapped figcaption {
+        text-align: center;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery figure {
+        margin: 0.5rem 2% 4% 0;
+    }
+
+    .gallery figure img {
+        margin: 0;
+    }
+
+    .gallery figure:hover {
+        box-shadow: 0px 0px 15px #F2A444;
+    }
+
+    .gallery figure figcaption {
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-top: 1%;
+    }
+
+    /* footer starts here*/
+    @media only screen and (max-width: 559px){
+        footer {
+            background-color: #0D0D0D;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            color: #F2F2F2;
+            line-height: 1.3rem;
+        }
+
+        footer a {
+            color: #F2A444;
+            text-decoration: none;
+        }
+    }
+
+    @media only screen and (min-width: 560px){
+        
+        footer {
+            background-color: #0D0D0D;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            color: #F2F2F2;
+            font-size: 1.2rem;
+        }
+    
+        footer a {
+            color: #F2A444;
+            text-decoration: none;
+        }
+    }
+    
+
+    @media only screen and (min-width: 70rem) {
+        .wrapped {
+            width: 25%;
+            margin: 0 0 0 2%;
+            float: right;
+        }
+       
+    }
+
+    .surveyForm fieldset {
+        border: 1px solid #F2A444;
+        border-radius: 3px;
+        margin-bottom: 1rem;
+    }
+
+    .surveyForm legend {
+        color: black;
+        background-color: #F2A444;
+        font-size: .8rem;
+        border-radius: 5px;
+    }
+
+    .surveyForm label{
+        display: block;
+        margin: .5rem;
+    }
+
+    .surveyForm [type=text], [type=tel], [type=email], .surveyForm select
+    , .surveyForm textarea {
+        display: block;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .surveyForm [type=text], [type=tel], [type=email], .surveyForm select {
+        width: 250px;
+        padding-top: .3rem;
+        border: 1px solid #F2A444;
+        padding-left: 0.2rem;
+        border-radius: 5px;
+    }
+
+    .surveyForm input:required {
+        border-left: 6px solid #024873;
+    }
+
+    .surveyForm input:required:valid {
+        border: 1px solid #F2A444;
+    }
+
+
+    .surveyForm textarea {
+        height: 6rem;
+    }
+
+    .surveyForm :required {
+        background-color: rgba(243, 141, 25, 0.1)
+    }
+    
+    .surveyForm [type=submit] {
+        background-color: #F2A444;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        color: black;
+        margin-top: 1rem;
+        margin-left: .5%;
+        font-size: 1rem;
+    }
+
+    #contactMain {
+        font-weight: 600;
+    }
+
+     #contactAddress {
+        background-color: white;
+        border: none;
+        font-weight: 600;
+    }
+
+    table.training-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+    }
+
+    table.training-table th {
+        background-color: #F2A444;
+        color: black;
+        padding: .5rem 2vw;
+        text-align: left;
+    }
+
+    table.training-table td {
+        padding: .5rem 2vw;
+    }
+
+    table.training-table tr:nth-child(odd) {
+        background-color: #f7f7f7;
+    }
+
+    table.training-table tr:hover {
+        background-color: rgba(63, 81, 130, 0.3);
+    }
+
+    .training-table tr {
+        text-align: left;
+    }
+
+    #trainingBrochure {
+        margin-bottom: 1.8rem;
+    }
+
+    #trainingBrochure a {
+        color: #F2A444;
+        font-size: 1.2rem;
+        font: bold;
+        text-decoration: none;
+    }
+
+    #trainingBrochure a:hover {
+        color: blue;
+        text-decoration: underline;
+    }
+
+    header, nav, main, footer {
+        max-width: 70rem;
+        margin: 0 auto;
+        min-width: 320px;    }
+    
+    
