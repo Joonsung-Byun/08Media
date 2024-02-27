@@ -1,93 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head> <!-- start head here-->
-        <title>All about Soccer Web Page, Joonsung</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
-        <meta name="description" content="About Soccer">
-        <meta name="author" content="Joonsung Byun">
-        <link rel="stylesheet" href="soccer.css">
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    </head>
-    <body>  <!-- start body here-->
-        <header>
-            <img src="images/logosoccer.png" alt="site logo" width="50" height="50">
-            <div>
-                <h1>All about Soccer</h1>
-                <p>The most popular sport in the world, Soccer</p>
-            </div>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Soccer</a></li>
-                <li><a href="players.html">Great Players</a></li>
-                <li><a href="teams.html">Popular Teams</a></li>
-                <li><a href="training.html">Training</a></li>
-                <li class="current_page"><a href="survey.html">Survey</a></li>
-                <li><a href="contact.html">Contact Us </a></li>
-            </ul>
-        </nav>
-        <main> <!-- start main here-->
-            <h1 id="teamsTop">Survey</h1>
-            <form action="thanks.html" class="surveyForm" method="get">
-                <fieldset>
-                    <legend>User Information</legend>
-                        <label>First Name* <input type="text" name="fname" required>
-                        </label>
-                        <label>Last Name* <input type="text" name="lname" required>
-                        </label>
-                        <label>Cell Number* <input type="tel" name="phone" placeholder="987-555-1234" required>
-                        </label>
-                        <label>Email Address* <input type="tel" name="mail" placeholder="1234@gmail.com" required>
-                        </label>
-                </fieldset>
+  <head>
+    <!-- start head here-->
+    <title>All about Soccer Web Page, Joonsung</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="About Soccer" />
+    <meta name="author" content="Joonsung Byun" />
+    <link rel="stylesheet" href="soccer.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <!-- start body here-->
+    <header>
+      <img src="images/logosoccer.png" alt="site logo" width="50" height="50" />
+      <div>
+        <h1>All about Soccer</h1>
+        <p>The most popular sport in the world, Soccer</p>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Soccer</a></li>
+        <li><a href="players.html">Great Players</a></li>
+        <li><a href="teams.html">Popular Teams</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li class="current_page"><a href="survey.html">Survey</a></li>
+        <li><a href="contact.html">Contact Us </a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- start main here-->
+      <h1 id="teamsTop">Survey</h1>
+      <form action="thanks.html" class="surveyForm" method="get">
+        <fieldset>
+          <legend>User Information</legend>
+          <label
+            >First Name* <input type="text" name="fname" required />
+          </label>
+          <label>Last Name* <input type="text" name="lname" required /> </label>
+          <label
+            >Cell Number*
+            <input
+              type="tel"
+              name="phone"
+              placeholder="987-555-1234"
+              required
+            />
+          </label>
+          <label
+            >Email Address*
+            <input
+              type="tel"
+              name="mail"
+              placeholder="1234@gmail.com"
+              required
+            />
+          </label>
+        </fieldset>
 
-                <fieldset>
-                    <legend>Contribution to your knowledge</legend>  <!-- contrubution이라는 항목에 얼마큼 동의하는가, name은 동일하고 value가 얼만큼이기 때문에 다르다-->
-                        <label><input type="radio" name="contribution" value="stronglyagree"> Strongly Agree
-                        </label>
-                        <label><input type="radio" name="contribution" value="agree"> Agree
-                        </label>
-                        <label><input type="radio" name="contribution" value="middle"> Neither Agree Nor Disagree
-                        </label>
-                        <label><input type="radio" name="contribution" value="stronglyagree"> Disagree
-                        </label>
-                        <label><input type="radio" name="contribution" value="stronglyagree"> Strongly Disagree
-                        </label>
-                </fieldset>
+        <fieldset>
+          <legend>Contribution to your knowledge</legend>
+          <!-- contrubution이라는 항목에 얼마큼 동의하는가, name은 동일하고 value가 얼만큼이기 때문에 다르다-->
+          <label
+            ><input type="radio" name="contribution" value="stronglyagree" />
+            Strongly Agree
+          </label>
+          <label
+            ><input type="radio" name="contribution" value="agree" /> Agree
+          </label>
+          <label
+            ><input type="radio" name="contribution" value="middle" /> Neither
+            Agree Nor Disagree
+          </label>
+          <label
+            ><input type="radio" name="contribution" value="stronglyagree" />
+            Disagree
+          </label>
+          <label
+            ><input type="radio" name="contribution" value="stronglyagree" />
+            Strongly Disagree
+          </label>
+        </fieldset>
 
-                <fieldset>
-                    <legend>Good Points of the Website</legend> <!--웹사이트의 좋은점이기 때문에 각 항목의 내용이 다르다. name이 다르고 value는 동일해도된다.-->
-                        <label><input type="checkbox" name="history" value="chosen"> friendly explanation
-                        </label>
-                        <label><input type="checkbox" name="teams" value="chosen"> Nice quality of Teams' pictures
-                        </label>
-                        <label><input type="checkbox" name="players" value="chosen"> Great Players information
-                        </label>
-                        <label><input type="checkbox" name="readability" value="chosen"> Good Readbility
-                        </label>
-                </fieldset>
+        <fieldset>
+          <legend>Good Points of the Website</legend>
+          <!--웹사이트의 좋은점이기 때문에 각 항목의 내용이 다르다. name이 다르고 value는 동일해도된다.-->
+          <label
+            ><input type="checkbox" name="history" value="chosen" /> friendly
+            explanation
+          </label>
+          <label
+            ><input type="checkbox" name="teams" value="chosen" /> Nice quality
+            of Teams' pictures
+          </label>
+          <label
+            ><input type="checkbox" name="players" value="chosen" /> Great
+            Players information
+          </label>
+          <label
+            ><input type="checkbox" name="readability" value="chosen" /> Good
+            Readbility
+          </label>
+        </fieldset>
 
-                <fieldset>
-                    <legend>More Information</legend>
-                        <label> Please select more information you want
-                            <select name="More info">
-                                <option value="none">Please select</option>
-                                <option value="pastMatches">Historical Matches</option>
-                                <option value="preview">Upcoming Matches Preview</option>
-                                <option value="news">Recent News</option>
-                                <option value="comparing">Comparing Players</option>
-                            </select>
-                        </label>
-                </fieldset>
+        <fieldset>
+          <legend>More Information</legend>
+          <label>
+            Please select more information you want
+            <select name="More info">
+              <option value="none">Please select</option>
+              <option value="pastMatches">Historical Matches</option>
+              <option value="preview">Upcoming Matches Preview</option>
+              <option value="news">Recent News</option>
+              <option value="comparing">Comparing Players</option>
+            </select>
+          </label>
+        </fieldset>
 
-                <label>Comments<textarea name="comments"></textarea></label>
-                <input type="submit" value="Send the client survey">
-            </form>
-            
-        </main>    
-        <footer> <!-- start footer here-->
-            <p>&copy; 2023 &bull;  <strong>Joonsung Byun</strong> &bull; <strong>DGM2120</strong> &bull; <strong>Number to call -></strong> <a href="tel:3854521355">1-3854521355</a></p>
-        </footer>
-    </body>
+        <label>Comments<textarea name="comments"></textarea></label>
+        <div id="disqus_thread"></div>
+        <script>
+          (function () {
+            var d = document,
+              s = d.createElement("script");
+            s.src = "https://web-essential-soccer.disqus.com/embed.js";
+            s.setAttribute("data-timestamp", +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript
+          >Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript"
+            >comments powered by Disqus.</a
+          ></noscript
+        >
+        <input type="submit" value="Send the client survey" />
+      </form>
+    </main>
+    <footer>
+      <!-- start footer here-->
+      <p>
+        &copy; 2024 &bull; <strong>Joonsung Byun</strong> &bull;
+        <strong>DGM2120</strong> &bull; <strong>Number to call -></strong>
+        <a href="tel:3854521355">1-3854521355</a>
+      </p>
+    </footer>
+  </body>
 </html>
