@@ -380,7 +380,7 @@ body {
         text-decoration: underline;
     }
 
-    header, nav, main, footer {
+     main {
         max-width: 70rem;
         margin: 0 auto;
         min-width: 320px;    }
